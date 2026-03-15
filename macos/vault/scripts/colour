@@ -19,7 +19,7 @@ if [ "$1" = "gruvbox" ]; then
   killall ghostty
 fi
 
-if [ "$1" = "gruber" ]; then
+if [ "$1" = "gruber-darker" ]; then
   echo "setting the colourscheme to gruber-darker"
   sleep 2
   # change ghostty

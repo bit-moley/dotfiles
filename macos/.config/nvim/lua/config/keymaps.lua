@@ -32,3 +32,9 @@ vim.keymap.set("n", "<leader>cs", "<CMD>Trouble symbols toggle focus=false<CR>")
 vim.keymap.set("n", "<leader>cl", "<CMD>Trouble lsp toggle focus=false win.position=right<CR>")
 vim.keymap.set("n", "<leader>xL", "<CMD>Trouble loclist toggle<CR>")
 vim.keymap.set("n", "<leader>xQ", "<CMD>Trouble qflist toggle<CR>")
+
+-- centre screen when jumping
+vim.keymap.set("n", "H", "Hzz")
+vim.keymap.set("n", "L", "Lzz")
+vim.keymap.set("n", "<C-u>", "<C-u>zz")
+vim.keymap.set("n", "<C-d>", "<C-d>zz")

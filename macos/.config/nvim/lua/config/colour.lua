@@ -1,2 +1,1 @@
-vim.cmd.colorscheme("gruber-darker")
--- vim.cmd.colorscheme("gruvbox")
+vim.cmd.colorscheme("gruvbox")
