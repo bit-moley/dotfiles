@@ -1,0 +1,23 @@
+output "eDP-1" {
+  mode 1920x1080@60
+  position 0,0
+  scale 1
+  alias $INTERNAL
+}
+
+output "DP-2" {
+  mode 2560x1080@89.91
+  position 0,0
+  scale 1
+  alias $THINKVISION
+}
+
+profile desk {
+  output $INTERNAL disable
+  output $THINKVISION enable
+}
+
+profile both {
+  output $INTERNAL enable
+  output $THINKVISION enable
+}
