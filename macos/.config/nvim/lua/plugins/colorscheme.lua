@@ -1,17 +1,12 @@
 return {
   -- colorschemes
   {
-    "ellisonleao/gruvbox.nvim",
-    priority = 1000,
-    config = true,
-    opts = {
-      transparent_mode = true,
-    }
+    'rebelot/kanagawa.nvim'
   },
   -- lualine
   {
     'nvim-lualine/lualine.nvim',
-    options = { theme = "gruvbox" },
+    options = { theme = "kanagawa" },
     config = function()
       require("lualine").setup()
     end
