@@ -1,2 +1,2 @@
-cmd - return : ghostty -e tmux
+cmd - return : open /Applications/Ghostty.app
 cmd - b : open /Applications/Zen.app

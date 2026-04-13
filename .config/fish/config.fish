@@ -14,6 +14,9 @@ alias vim="nvim"
 alias vi="nvim"
 alias v="nvim"
 
+# eza
+alias ls="eza -l"
+
 ### PATH VARIABLES ###
 fish_add_path ~/go/bin
 for dir in ~/bin/*/
