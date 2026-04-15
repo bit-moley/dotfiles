@@ -1,0 +1,115 @@
+/* ── Tokyo Night Waybar ─────────────────────────────────────────────── */
+
+/* Palette
+   bg:         #1a1b26
+   bg-alt:     #16161e
+   surface:    #24283b
+   border:     #292e42
+   fg:         #c0caf5
+   fg-dim:     #565f89
+   blue:       #7aa2f7
+   cyan:       #7dcfff
+   green:      #9ece6a
+   yellow:     #e0af68
+   orange:     #ff9e64
+   red:        #f7768e
+   magenta:    #bb9af7
+*/
+
+* {
+    font-family: "JetBrainsMono Nerd Font", "Noto Sans", sans-serif;
+    font-size: 13px;
+    border: none;
+    border-radius: 0;
+    min-height: 0;
+    background-color: #1a1b26
+}
+
+window#waybar {
+    background-color: transparent;
+    color: #c0caf5;
+}
+
+#workspaces {
+    padding: 0 4px;
+    font-weight: bold;
+}
+
+#workspaces button {
+    padding: 0 6px;
+    color: #565f89;
+    background: #1a1b26;
+    transition: all 0.2s ease;
+}
+
+#workspaces button:hover {
+    color: #7aa2f7;
+    background: #1a1b26;
+    border-radius: 6px;
+}
+
+#workspaces button.active {
+    color: #7aa2f7;
+    background: #1a1b26;
+    border-radius: 6px;
+}
+
+#workspaces button.urgent {
+    color: #f7768e;
+    background: rgba(247, 118, 142, 0.15);
+    border-radius: 6px;
+}
+
+#clock {
+    color: #c0caf5;
+    font-weight: bold;
+    padding: 0 10px;
+}
+
+#cpu,
+#memory,
+#battery,
+#network,
+#pulseaudio {
+    padding: 0 10px;
+    color: #c0caf5;
+    font-weight: bold;
+}
+
+#cpu {
+    color: #f7768e;
+}
+
+#memory {
+    color: #7dcfff;
+}
+
+#network {
+    color: #bb9af7;
+}
+
+#pulseaudio {
+    color: #e0af68;
+}
+
+#pulseaudio.muted {
+    color: #565f89;
+}
+
+
+#battery {
+    color: #9ece6a;
+}
+
+#battery.warning {
+    color: #e0af68;
+}
+
+#battery.critical {
+    color: #f7768e;
+    animation: blink 1s step-start infinite;
+}
+
+#battery.charging {
+    color: #9ece6a;
+}
