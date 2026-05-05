@@ -4,5 +4,5 @@ require("config.options")
 require("config.colour")
 
 --- LSP CONFIG ---
-vim.lsp.enable({ "lua_ls", "rust_analyzer", "basedpyright", "gopls", "clangd", "ols" })
+vim.lsp.enable({ "lua_ls", "rust_analyzer", "basedpyright", "gopls", "clangd", "ols", "gdscript" })
 vim.lsp.log.set_level("ERROR")
